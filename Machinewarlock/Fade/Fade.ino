@@ -29,7 +29,6 @@ void loop() {
     
   /* This is the delay of the fading at 20ms */
   delay(20);
-  
 }
 
 
