@@ -11,14 +11,14 @@ void setup() {
 }
 //declare a function that will run a loop 
 void loop() {
-   analogWrite(led, brightness); 
-   brightness += fadeAmount;
-   if (brightness <= 0 || brightness >= 255){
-   fadeAmount =- fadeAmount;
+   analogWrite(led, brightness); //sets the LED brightness to the initial brighness (0)
+   brightness += fadeAmount; //changes the brightness by the fadeAmount
+   if (brightness <= 0 || brightness >= 255){ //if the condition is met and the brightness is either 0 or 255
+      fadeAmount =- fadeAmount; //it will change the sign for fadeAmount and depending on what it was previously, it will either decrease or increase the fadeAmount
    Serial.print(brightness);
    Serial.print("\n");
    }
    delay (30); 
-   }
+}
 
 

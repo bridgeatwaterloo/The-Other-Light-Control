@@ -11,7 +11,7 @@ void loop() {
    delay (100); //this tells the led for how long is should be on (1000 = 1second)
    digitalWrite(led,LOW); //a function that tells the led to be off
    delay(100); //this is the delay time for the led to be off
-   }
+}
 
 
 
