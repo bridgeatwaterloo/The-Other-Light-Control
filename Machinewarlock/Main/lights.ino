@@ -1,19 +1,19 @@
 /* This is function that turns the LED on at the start */
 void turnOnAndOff() {
-  digitalWrite(pin, 1);	  // This turns the LED on
-  delay(200);				     // This is the time in ms for the LED to turn on
+  digitalWrite(pin, 1);	// This turns the LED on
+  delay(200);				    // This is the time in ms for the LED to turn on
   digitalWrite(pin, 0);	// This turns the LED off
-  delay(200);				   // This is the time in ms for the LED to turn off
+  delay(200);				    // This is the time in ms for the LED to turn off
 }
 
 /* This is the function that makes the LED fade */
 void fadeTheLightsToALevel() {
-  brightness = brightness + fadeLevel;	// This is the command that increases the brightness
+  brightness = brightness + fadeLevel; //This is the command that increases the brightness
 
-  if (brightness <= 0 || brightness >= 255) {	 // This is the logic that decides whether the brightness should increase or decrease after a certain critera is met
+  if (brightness <= 0 || brightness >= 255) {	 //This is the logic that decides whether the brightness should increase or decrease after a certain critera is met
 	 fadeLevel = -fadeLevel;
 	}
-  analogWrite(pin, brightness);	 // This is the initial brightness of the LED
+  analogWrite(pin, brightness);	// This is the initial brightness of the LED
 
   delay(20);	// This is the time in ms for the LED to fade
 }
