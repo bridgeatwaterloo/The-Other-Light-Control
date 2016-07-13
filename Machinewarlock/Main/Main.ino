@@ -24,7 +24,7 @@ after a certain period of time */
 void loop() {
   fadeTheLightsToALevel();	// This is the function that makes the LED fade
   if(brightness == 0) {		// This is the logic that decides when the LED should blink
-  	delay(500);
-  	blinkLights();
+    delay(500);
+    blinkLights();
   }
 }
