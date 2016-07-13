@@ -1,9 +1,9 @@
 /* This is function that turns the LED on at the start */
 void turnOnAndOff() {
-  digitalWrite(pin, 1);	// This turns the LED on
-  delay(200);				    // This is the time in ms for the LED to turn on
-  digitalWrite(pin, 0);	// This turns the LED off
-  delay(200);				    // This is the time in ms for the LED to turn off
+  digitalWrite(pin, 1);				// This turns the LED on
+  delay(200);									// This is the time in ms for the LED to turn on
+  digitalWrite(pin, 0);				// This turns the LED off
+  delay(200);									// This is the time in ms for the LED to turn off
 }
 
 /* This is the function that makes the LED fade */
@@ -20,11 +20,11 @@ void fadeTheLightsToALevel() {
 
 /* This is the function that makes the LED blink */
 void blinkLights() {
-  for (int i=0; i<4; i++) {	// This is the logic that repeats the function 4 times
-	 digitalWrite(pin, 1);		// This turns the LED on
-	 delay(500);							// This is the time in ms for the LED to turn on
-	 digitalWrite(pin, 0);		// This turns the LED off
-	 delay(500);							// This is the time in ms for the LED to turn off
+ for (int i=0; i<4; i++) {	// This is the logic that repeats the function 4 times
+	digitalWrite(pin, 1);			// This turns the LED on
+	delay(500);								// This is the time in ms for the LED to turn on
+	digitalWrite(pin, 0);			// This turns the LED off
+	delay(500);								// This is the time in ms for the LED to turn off
 	}
-  delay(5000);							// This is the time in ms for the loop to continue
+ delay(5000);								// This is the time in ms for the loop to continue
 }
