@@ -20,3 +20,16 @@ void blinkOnFadeOut() {
 	} while(brightness <=255 && brightness >=0);
 	brightness = 0;
 }
+	void threeFlashes(){
+		count = count +1;
+	   	analogWrite(pin,255);
+	     delay(500);	    
+	     analogWrite(pin,0);
+	     delay(500);
+	     if (/* condition */count==3)
+	     {
+	     	delay(2000);
+	     }
+
+
+	 } 
