@@ -10,7 +10,6 @@
  void setup() {
 
     pinMode (led, OUTPUT);
-    //random comment
 
   }
 /* this function runs until you press off*/ 
