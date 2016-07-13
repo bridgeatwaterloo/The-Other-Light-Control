@@ -9,6 +9,7 @@ int timeOn = 400;
 //setup code: this pulls the program from the Arduino pre-program
 void setup(){
   pinMode(pin, OUTPUT);
+  Serial.begin(9600);
 }
 
 //main code: the main code which produce the desired effects for the components
@@ -19,4 +20,6 @@ void loop(){
                  fadeAmount = - fadeAmount;
               }
        delay(timeOn);
-}       
+           Serial.print(brightness);
+           Serial.print('\n');
+ }
