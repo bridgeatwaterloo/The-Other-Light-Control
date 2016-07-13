@@ -19,7 +19,7 @@ void fadeTheLightsToALevel() {
 }
 
 /* This is the function that makes the LED blink */
-voi blinkLights() {
+void blinkLights() {
   for (int i=0; i<4; i++) {	// This is the logic that repeats the function 4 times
 	 digitalWrite(pin, 1);		// This turns the LED on
 	 delay(500);							// This is the time in ms for the LED to turn on
