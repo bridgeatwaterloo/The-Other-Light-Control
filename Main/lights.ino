@@ -67,5 +67,26 @@ void pellMorseCode() {
 	analogWrite(pin, 0); //Pin off
 	delay(150); //off length
 	delay(600); //Space between letters
+}
+
+void aliAliAli(){
+	aliCount = aliCount +1;
+	analogWrite(pin, 255);
+	delay(500);
+	analogWrite(pin, 0);
+	delay(500);
+
+	if (aliCount == 6)
+	{
+		if (oiCount <=3){
+			oiCount = oiCount +1;
+			analogWrite(pin, 255);
+			delay(1000);
+			analogWrite(pin, 0);
+			delay(500);
+		}
+	}
 
 }
+
+
