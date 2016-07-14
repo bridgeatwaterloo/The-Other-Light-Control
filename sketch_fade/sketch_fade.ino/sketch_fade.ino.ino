@@ -1,11 +1,12 @@
 
 /*this fade sketch meets the Acceptance Criteria https://trello.com/c/14LuCcGE */
 
+/*the int list is used as a key the show the amounts used within the code*/
 int pin = 9;
 int shine = 0;
 int fadeAmount = 5.9;
-int flashon = 258;
-int flashoff = 250;
+int flashOn = 258;
+int flashOff = 250;
 
   /*setup used the run once*/
   void setup() {
@@ -35,7 +36,7 @@ int flashoff = 250;
     fadeAmount = -fadeAmount ;
 }
   /*wait for 15 milliseconds to see the blink effect off*/
-  delay(flashon);
+  delay(flashOn);
 }
 
 
