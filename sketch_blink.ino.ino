@@ -5,8 +5,8 @@
 int pin = 9;
 int shine = 0;
 int fadeAmount = 5.9;
-int flashon = 258;
-int flashoff = 250;
+int flashOn = 258;
+int flashOff = 250;
 
   /*setup used the run once*/
   void setup() {
@@ -29,13 +29,13 @@ int flashoff = 250;
   digitalWrite(pin, HIGH);
 
   /*wait for 15 milliseconds to see the blind effect on*/
-  delay(flashon);
+  delay(flashOn);
 
   /*changes the brightness for the next loop*/
   digitalWrite(pin, LOW);
 
   /*wait for 15 milliseconds to see the blink effect off*/
-  delay(flashoff);
+  delay(flashOff);
 }  
 
 
