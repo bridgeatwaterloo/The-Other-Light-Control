@@ -12,12 +12,12 @@ int yellowled = 12;
 int greenled = 10;
 int redled = 6;
 
-int brightness = 0; /* set initial brightness level */
-int fadeAmount = 5; /* set initial fadeAmount */
+int brightness = 0; //set initial brightness level//
+int fadeAmount = 5; //set initial fadeAmount//
 
 //setting each coloured light as the output//
 void setup() {
-// put your setup code here, to run once:
+//put your setup code here, to run once:
 	
 	pinMode(yellowled, OUTPUT);
 	pinMode(greenled, OUTPUT);
@@ -39,7 +39,7 @@ void setup() {
 }
 
 void loop() {
-// put your main code here, to run repeatedly:
+//put your main code here, to run repeatedly:
 
 //set each colour to brightness//
   analogWrite(yellowled, brightness);
@@ -48,7 +48,7 @@ void loop() {
   
   brightness = brightness +fadeAmount; //brightness number increases by the fade amount each time//
 
-  if (brightness <= 0 || brightness >= 255) { // conditiion, if brightness is fully on or off, the fade amount will decrease by the fade amount number //
+  if (brightness <= 0 || brightness >= 255) { //conditiion, if brightness is fully on or off, the fade amount will decrease by the fade amount number//
     fadeAmount = -fadeAmount; 
     }
     
