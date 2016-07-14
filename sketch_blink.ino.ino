@@ -1,6 +1,7 @@
 
-/*this fade sketch meets the Acceptance Criteria https://trello.com/c/HQigFpAG */
+/*this blink sketch meets the Acceptance Criteria https://trello.com/c/HQigFpAG */
 
+/*the int list acts as a key to show what the named variables do and also to tell the code of such*/
 int pin = 9;
 int shine = 0;
 int fadeAmount = 5.9;
