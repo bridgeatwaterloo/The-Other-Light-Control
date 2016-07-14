@@ -3,7 +3,7 @@ int pin = 9;
 int brightness = 0;
 int fadeAmount = 5;
 int time = 100;
-int flash = 3;
+int flash = 10;
 
 // the setup pre-program \/
 void setup() {
@@ -35,7 +35,7 @@ void loop() {
 } 
  // the int represents the inputed number of when a multiple of 5 will equal 0 exactly or the previous statement will not be true \/
 boolean divisibleByFive (int number) {
-	if (number%5==0) { 
+	if (number%3==0) { 
 		return true;
 	} else {
 		return false;
