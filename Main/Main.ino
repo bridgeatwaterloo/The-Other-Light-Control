@@ -12,13 +12,11 @@ int pin = 9; //set pin to number 9 as variable
 int aliCount = 0; // set Ali Count to 0
 int oiCount = 0; // set Oi Count to 0
 
-
 void setup() {
   // put your setup code here, to run once:
   pinMode(pin, OUTPUT);
   pellMorseCode();
 }
-
 
 void loop() {
 	delay(2000);
