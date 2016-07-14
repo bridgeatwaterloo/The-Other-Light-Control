@@ -1,9 +1,9 @@
 /*
 This is the main file for the interactive light project. IT will be uploaded to Arduino.
 
-The code that animates the light is saved in a separate file called lights.h
+The code that animates the light is saved in a separate file called lights.ino
 
-This code that reads the sensor is saved in a separate file called sensors.h
+This code that reads the sensor is saved in a separate file called sensors.ino
 */
 
 
